@@ -10,7 +10,8 @@ const routes: Routes = [
   { 
     path: 'protegida', 
     component: ProtegidaComponent,
-    canActivate: [GuardWardGuard]
+    //canActivate: [GuardWardGuard]
+    canActivate: [AuthGuard]
   },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
